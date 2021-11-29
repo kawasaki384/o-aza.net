@@ -2,17 +2,10 @@
 
 #[macro_use]
 extern crate rocket;
-
-#[get("/")]
-fn index() -> &'static str{
-    "Hello-O-aza!"
-}
-
-#[get("/hello")]
-fn hello() -> &'static str{
-    "hello"
-}
+mod routes;
+use routes::*;
 
 fn main(){
-    rocket::ignite().mount("/",routes![index,hello]).launch();
+    rocket::ignite().mount("/",routes![index,hello])
+    .register(catchers![not_found]).launch();
 }
