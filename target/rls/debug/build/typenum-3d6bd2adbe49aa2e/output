@@ -1,2 +1,0 @@
-cargo:rustc-env=TYPENUM_BUILD_CONSTS=p:\WorkSpace\TestWeb\o-aza\target\rls\debug\build\typenum-3d6bd2adbe49aa2e\out\consts.rs
-cargo:rustc-env=TYPENUM_BUILD_OP=p:\WorkSpace\TestWeb\o-aza\target\rls\debug\build\typenum-3d6bd2adbe49aa2e\out\op.rs
